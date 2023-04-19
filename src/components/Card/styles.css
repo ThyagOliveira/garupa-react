@@ -1,8 +1,8 @@
 .cardStyle {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 19rem;
-  margin: 0.2rem;
+  width: 23rem;
+  margin: 0.6rem;
 }
 
 .cardStyle:hover {
@@ -28,5 +28,12 @@
 }
 
 .image {
-  width: 19rem;
+  width: 4.5rem;
+  max-width: 4.5rem;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+.containerImage {
+  height: 20rem;
 }

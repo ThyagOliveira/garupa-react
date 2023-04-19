@@ -13,7 +13,7 @@ export default function Card({
 }) {
   return (
     <article className="cardStyle">
-      <div className="containerImg">
+      <div className="containerImage">
         <img className="image" alt="Beer" src={image_url} />
       </div>
       <div className="cardContainer">
