@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/Card';
+import PaginationComponent from '../../components/Pagination';
 import api from '../../utils/api';
 import './styles.css';
 
 export default function HomePage() {
   const [beers, setBeers] = useState([]);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     loadBeersRandom();
-  }, []);
+  }, [page]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadBeersRandom = async () => {
-    const page = Math.floor(Math.random() * 25 + 1);
-    const size = 20;
-
-    const response = await api.loadBeerPage(page, size);
+    const response = await api.loadBeerPage(page);
     setBeers(response.data);
+  };
+
+  const handleGetPage = (event, page) => {
+    setPage(page);
   };
 
   return (
@@ -33,6 +36,14 @@ export default function HomePage() {
           abv={item.abv == null ? 0 : item.abv}
         />
       ))}
+      <PaginationComponent
+        spacing={2}
+        count={10}
+        color={'secondary'}
+        shape={'rounded'}
+        variant={'outlined'}
+        onChange={handleGetPage}
+      />
     </div>
   );
 }
