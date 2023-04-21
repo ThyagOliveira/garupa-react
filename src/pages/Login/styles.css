@@ -40,3 +40,21 @@
   width: 90%;
   background-color: #202329 !important; 
 }
+
+@media (max-width: 767px) {
+  .loginForm {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .loginForm {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+  .loginForm {
+    width: 70%;
+  }
+}
