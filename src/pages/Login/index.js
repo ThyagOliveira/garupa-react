@@ -49,6 +49,9 @@ export default function LoginPage() {
           onChange={handleChange}
           margin="normal"
           required
+          InputProps={{
+            placeholder: 'Digite seu e-mail',
+          }}
         />
         <TextField
           className="formText"
@@ -60,6 +63,9 @@ export default function LoginPage() {
           onChange={handleChange}
           margin="normal"
           required
+          InputProps={{
+            placeholder: 'Digite sua senha',
+          }}
         />
         <Button className="formButton" type="submit" variant="contained">
           Entrar
