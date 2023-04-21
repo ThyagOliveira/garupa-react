@@ -1,0 +1,38 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: #5B6475;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 21px;
+}
+
+.formTitle {
+  color: #FFFFFF;
+}
+
+.formText {
+  width: 90%;
+}
+
+.formText input {
+  color: #FFFFFF;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #202329 !important;
+}
+
+.formButton {
+  width: 90%;
+  background-color: #202329 !important; 
+}
