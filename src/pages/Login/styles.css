@@ -28,6 +28,10 @@
   color: #FFFFFF;
 }
 
+.formText input::placeholder {
+  color: #FFFFFF;
+}
+
 .Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: #202329 !important;
 }

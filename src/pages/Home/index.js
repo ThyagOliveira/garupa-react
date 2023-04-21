@@ -30,7 +30,7 @@ export default function HomePage() {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar className="appBarContainer" position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Garupa
@@ -58,7 +58,7 @@ export default function HomePage() {
         <PaginationComponent
           spacing={2}
           count={10}
-          color={'secondary'}
+          color={'primary'}
           shape={'rounded'}
           variant={'outlined'}
           onChange={handleGetPage}

@@ -35,5 +35,10 @@
 }
 
 .containerImage {
+  display: flex;
   height: 20rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
